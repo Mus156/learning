@@ -43,6 +43,33 @@ def main():
     y = False
     print(x or y)
 
+def ages():
+    igors_age = 31.2
+    davids_age = 52
+    johns_age = 10
+    if igors_age > davids_age and igors_age > johns_age:
+        print("Игорь старше всех")
+    elif davids_age > igors_age and davids_age > johns_age:
+        print("Давид старше всех")
+    else:
+        print("Джон старше всех")
+
+
+    john_is_youngest = johns_age < igors_age and johns_age < davids_age
+    print(type(john_is_youngest))
+    if john_is_youngest:
+        print("Джон самый младший")
+
+    if igors_age == davids_age and igors_age == johns_age:
+        print("Все одинакового возвраста")
+    if igors_age != davids_age:
+        print("Игорь и Давид разного возвраста")
+    if igors_age <= davids_age and igors_age >= johns_age:
+        print("Игорь не старше Давида и не моложе Джона")
+
+
+
 
 if __name__ == "__main__":
     main()
+    ages()
