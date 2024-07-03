@@ -10,6 +10,7 @@ def type_of(var, name):
     else:
         print(f"Не удалось определить тип переменной {name}")
 
+
 def check_type():
     a = True
     b = 123
@@ -22,8 +23,9 @@ def check_type():
     type_of(d, "d")
     type_of(e, "e")
 
+
 def main():
-    hello = "Hello World"       # hello - строковая переменная (str, string)
+    hello = "Hello World"  # hello - строковая переменная (str, string)
     print(type(hello))
     print(hello)
     print("ok")
@@ -38,8 +40,20 @@ def main():
     print(type(age))
     print(age + 10)
     print(type(hello))
+    print('Роман Тургенева "Отцы и дети"')
+    print("The 'New York Times'")
+
+def str_methods():
+    hello = 'Hello World'
+    print(f'Длина фразы {hello} - {len(hello)}')            # метод len - посчитать количество символов строки
+    print(hello.replace('Hello', 'Goodbye'))    # метод replace - замена части строки
+    spaced = '   Hello   '
+    print(f'Длина с пробелами - {len(spaced)}, длина без пробелов - {len(spaced.strip())}')     # метод strip - отбрасывает пробелы в начале и в конце
+    print(hello.upper(), hello.lower())                     # метод upper, lower - поменять регистр букв
+    print('ll' in hello)
 
 
 if __name__ == "__main__":
-    # main()
+    main()
     check_type()
+    str_methods()
