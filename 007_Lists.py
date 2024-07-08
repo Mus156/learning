@@ -16,7 +16,7 @@ def main():
     del car_models [5]
     car_models.pop()
     car_models.pop(3)
-    car_models = [x for i, x in enumerate(car_models) if i != 2]
+    car_models = [x for i, x in enumerate(car_models) if i != 2]        # [... for ...] Генератор списка
     print(car_models)
 
 

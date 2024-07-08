@@ -51,7 +51,20 @@ def str_methods():
     print(f'Длина с пробелами - {len(spaced)}, длина без пробелов - {len(spaced.strip())}')     # метод strip - отбрасывает пробелы в начале и в конце
     print(hello.upper(), hello.lower())                     # метод upper, lower - поменять регистр букв
     print('ll' in hello)
-
+    hello = 'Hello'
+    hello_list = list(hello)
+    first_char = ord(hello[0])
+    print(chr(72))
+    print(first_char)
+    print(type(hello))                                # Спископодобные объекты можно превращать в список (cast)
+    print(type(hello_list))                           # Спископодобные объекты можно превращать в список (cast)
+    abc = 'ABCD'
+    print(ord(abc[0]))
+    print(ord(abc[1]))
+    abc_ru = 'АБВГДЕЁЖ'
+    print(ord(abc_ru[5]))
+    print(ord(abc_ru[6]))
+    print(ord(abc_ru[7]))
 
 if __name__ == "__main__":
     main()
