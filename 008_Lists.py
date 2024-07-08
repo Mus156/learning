@@ -25,8 +25,8 @@ def main():
     print(car_models.index('УАЗ', 3))
     print(car_models[-3:-1])
     print(list(reversed(car_models)))
-
     print(car_models)
+
 
 
 if __name__ == "__main__":

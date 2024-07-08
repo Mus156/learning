@@ -67,9 +67,23 @@ def ages():
     if igors_age <= davids_age and igors_age >= johns_age:
         print("Игорь не старше Давида и не моложе Джона")
 
-
+def conversions():
+    print(bool(0))                           # False
+    print(bool(1))                           # Любое число, отличное от 0 = True
+    print(bool(-1))                          # Любое число, отличное от 0 = True
+    print(bool(1.3))                         # Любое число, отличное от 0 = True
+    print(bool(''))                          # Пустая строка = False
+    print(bool('Hello'))                     # Любая не пустая строка = True
+    print(bool('   '))                       # Эта строка не пустая, она состоит из пробелы
+    print(bool('  '.strip()))                # Теперь строка стала пустой, метод strip убрал пробелы в начале и в конце
+    print(bool([]))                          # Пустой список = False
+    print(bool([1, 2, 3]))
+    print(bool(()))                          # Пустой кортеж = False
+    print(bool((1, 2, 'ok')))
+    print(bool(None))                        # None - отсутствие какого-либо значения
 
 
 if __name__ == "__main__":
     main()
     ages()
+    conversions()
